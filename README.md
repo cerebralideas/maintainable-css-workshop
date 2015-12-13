@@ -6,8 +6,8 @@ I'm Justin Lowery, a senior software engineer in Austin, TX. I work on the Consu
 
 Reach out to me!
 
-Email: jlowery@paypal.com
-Twitter: @cerebralideas
+- Email: jlowery@paypal.com
+- Twitter: @cerebralideas
 
 I'm also on Slack and HipChat!
 
