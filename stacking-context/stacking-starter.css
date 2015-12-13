@@ -4,6 +4,15 @@ body {
 }
 
 /**
+ * Instructions:
+ * Fix the defect! The modal's background overlay does not cover the header/nav.
+ * 1. Use TCEM: https://github.com/cerebrl/tcem-css
+ * 2. No decendant selectors and no IDs
+ * 3. Design can't change, so that means the header stays fixed and allows the content to scroll underneath it
+ * 4. Do it in the least changes possible.
+ */
+
+/**
  * Content layout
  */
 .siteForeground {
