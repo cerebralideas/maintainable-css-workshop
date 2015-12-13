@@ -20,7 +20,7 @@ I'm also on Slack and HipChat!
 
 ## Ready? Okay, let's get started!
 
-The challenges are within the project directories. The `-starter.*` files are meant to be copied and pasted into a live code editor with output. I recommend [Mozilla's Thimble](https://thimble.mozilla.org) or [JSBin.com](http://jsbin.com/). 
+The challenges are within the project directories. The `-starter.*` files are meant to be copied and pasted into a live code editor with output. I recommend [Mozilla's Thimble](https://thimble.mozilla.org), but any other live output producing code editor is fine.
 
 The brief instructions are found in the CSS file within a comment. If you want more information regarding each challenge, you can refer to the `_docs` directory to find slightly more in-depth discussion and hints for solving the challenges.
 
