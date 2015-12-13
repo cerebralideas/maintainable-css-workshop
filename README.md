@@ -24,4 +24,8 @@ The challenges are within the project directories. The `-starter.*` files are me
 
 The brief instructions are found in the CSS file within a comment. If you want more information regarding each challenge, you can refer to the `_docs` directory to find slightly more in-depth discussion and hints for solving the challenges.
 
+There are also demos of how to solve a few of the challenges in a slightly different context for ideas. These use the same techniques and can often inspire the solution.
+
+Lastly, once you are done with all your challenges, you can see if your solution was similar to mine by going into the `_answers` directory for the full solution. But, don't cheat! Really push yourself, and see how far you can get. Good luck!
+
 #### As always, ask me anything :)
