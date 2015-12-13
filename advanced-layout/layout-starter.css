@@ -1,0 +1,13 @@
+body {
+	margin: 0;
+}
+/**
+ * Instructions:
+ * 1. Use TCEM: https://github.com/cerebrl/tcem-css
+ * 2. No floats or positioning
+ * 3. No decendant selectors; i.e. single selectors only
+ * 4. Left and right icons must be optional and centered on the x and y
+ * 5. Text automatically adjusts to the presence of the icons
+ * 5. Color of header is #EEE; color of border is #CCC
+ * 6. See mock design for reference: https://www.dropbox.com/s/w0yu67um9q0lrm6/actionTable-mock.png
+ */

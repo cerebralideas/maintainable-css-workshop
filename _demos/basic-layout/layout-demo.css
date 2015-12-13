@@ -1,0 +1,56 @@
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+.siteFooter-container {
+	position: absolute;
+	bottom: 0;
+	font-size: 0;
+	background: #EEE;
+	width: 100%;
+	border-top: 1px solid #CCC;
+}
+.siteFooter-list {
+	font-size: 1rem;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+.siteFooter-list_primary {
+	width: 75%;
+}
+.siteFooter-list_secondary {
+	display: inline-block;
+}
+.siteFooter-feedback {
+	font-size: 1rem;
+	display: inline-block;
+	width: 25%;
+	text-align: right;
+}
+.siteFooter-item {
+	display: inline-block;
+}
+.siteFooter-link {
+	display: block;
+	padding: 0.5em 1em;
+	color: blue
+}
+.siteFooter-link_feedback {
+	color: black;
+	display: block;
+}
+.siteFooter-link_feedback {
+	background: lightblue;
+	display: inline-block;
+}
+.siteFooter-copyright {
+	font-size: 1rem;
+	display: inline;
+	width: 25%;
+}
+.siteFooter-copyrightText {
+	display: inline-block;
+	padding: 1em;
+}

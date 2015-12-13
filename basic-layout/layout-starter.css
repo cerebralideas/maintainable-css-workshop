@@ -1,0 +1,13 @@
+body {
+	margin: 0;
+}
+/**
+ * Instructions:
+ * 1. Use TCEM: https://github.com/cerebrl/tcem-css
+ * 2. No floats or positioning
+ * 3. No decendant selectors; i.e. single selectors only
+ * 4. Layouts must be natural or percent based
+ * 5. Color of header is #EEE; color of border is #CCC
+ * 6. See mock design for reference: https://www.dropbox.com/s/yc2tz23b4ahadae/header-mock.png
+ * 7. Extra points for giving the logout link a button-like style
+ */

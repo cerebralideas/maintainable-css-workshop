@@ -1,0 +1,34 @@
+body {
+	margin: 5em 0 0;
+}
+
+.actionTable-list {
+	background: #EEE;
+	border: #CCC 1px solid;
+	width: 80%;
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+}
+.actionTable-link {
+	display: table;
+	width: 100%;
+	height: 100%;
+	border-bottom: #CCC 1px solid;
+	padding: 0.5em 0;
+}
+.actionTable-icon,
+.actionTable-text {
+	display: table-cell;
+	text-align: center;
+}
+.actionTable-text {
+	padding: 0 0.5em;
+	text-align: left;
+}
+.actionTable-icon {
+	width: 2em;
+	height: 100%;
+	text-align: center;
+	vertical-align: center;
+}
