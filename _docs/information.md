@@ -156,4 +156,149 @@ The idea here is only context A and B can move forward or backward, but A:1 cann
 
 #### Start the stacking context challenge now: fix the bug that prevents the modal background from being in front of the header.
 
-### Questions?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Using Less
+
+Less is a powerful abstraction to CSS that removes a lot of the frustrations to writing CSS for complex apps. But, with this power comes great consequences that are very much hidden from the developer's consciousness.
+
+#### Nesting
+
+##### Less
+```css
+.buttonBackground(@startColor, @endColor, @textColor: #fff, @textShadow: 0 -1px 0 rgba(0,0,0,.25)) {
+	/* ... */
+	&:hover, &:active, &.active, &.disabled, &[disabled] {
+		color: @textColor;
+		background-color: @endColor;
+		*background-color: darken(@endColor, 5%);
+	}
+}
+```
+
+#### CSS
+```css
+/* line 180, /Users/jlowery/paypal/walletexpnodeweb/public/css/_lib/mixins.less */
+.datepicker table tr td.range.today:hover,
+.datepicker table tr td.range.today:hover:hover,
+.datepicker table tr td.range.today.disabled:hover,
+.datepicker table tr td.range.today.disabled:hover:hover,
+.datepicker table tr td.range.today:active,
+.datepicker table tr td.range.today:hover:active,
+.datepicker table tr td.range.today.disabled:active,
+.datepicker table tr td.range.today.disabled:hover:active,
+.datepicker table tr td.range.today.active,
+.datepicker table tr td.range.today:hover.active,
+.datepicker table tr td.range.today.disabled.active,
+.datepicker table tr td.range.today.disabled:hover.active,
+.datepicker table tr td.range.today.disabled,
+.datepicker table tr td.range.today:hover.disabled,
+.datepicker table tr td.range.today.disabled.disabled,
+.datepicker table tr td.range.today.disabled:hover.disabled,
+.datepicker table tr td.range.today[disabled],
+.datepicker table tr td.range.today:hover[disabled],
+.datepicker table tr td.range.today.disabled[disabled],
+.datepicker table tr td.range.today.disabled:hover[disabled] {
+  color: #ffffff;
+  background-color: #d5e37c;
+  *background-color: #cede67;
+}
+```
+
+#### Mixins
+
+##### Less
+
+```css
+.clearfix {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+  & {
+    zoom: 1; /* ie 6/7 */
+  }
+}
+.articleDetails-header {
+  /* ... */
+  .clearfix();
+}
+.articleDetails-footer {
+  /* ... */
+  .clearfix();
+}
+```
+
+##### CSS
+```css
+.articleDetails-header {
+  zoom: 1;
+  /* ie 6/7 */
+}
+.articleDetails-header:before,
+.articleDetails-header:after {
+  content: "";
+  display: table;
+}
+.articleDetails-header:after {
+  clear: both;
+}
+.articleDetails-footer {
+  zoom: 1;
+  /* ie 6/7 */
+}
+.articleDetails-footer:before,
+.articleDetails-footer:after {
+  content: "";
+  display: table;
+}
+.articleDetails-footer:after {
+  clear: both;
+}
+```
+
+This should be avoided because code duplication is a direct result. The Less is nice and clean, but the compiled CSS, which is the most important for the performance of our app, is not.
+
+Instead, we do almost the same thing, but rather than using a Less mixin, we compose the nearly identical behavior in the HTML:
+
+```html
+<header class="articleDetails-header clearfix"> <!-- ... --> </header>
+<!-- ... -->
+<header class="articleDetails-footer clearfix"> <!-- ... --> </header>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Questions?
